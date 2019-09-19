@@ -1,0 +1,73 @@
+/* GENERAL */
+
+:root {
+  /* VARIABLES */
+  --nebula-blue: #6288a5; 
+  --galaxy-blue: #326891;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  padding-top: 100px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* HEADER */
+
+header.header-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: pink;
+}
+
+nav.nav-top {
+  height: 40px;
+}
+
+nav.nav-top > * {
+  width: 33.333%;
+  background: yellow;
+  border: 1px solid black;
+  height: 100%;
+  padding: 10px;
+}
+
+div.logo-center {
+  text-align: center;
+}
+
+div.logo-center img {
+  width: 40%;
+}
+
+button.btn-auth {
+  background-color: var(--nebula-blue);
+  border: 1px solid var(--galaxy-blue);
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+div.right-top button {
+  margin-top: -5px;
+  margin-right: 8px;
+}
