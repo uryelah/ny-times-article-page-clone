@@ -119,9 +119,32 @@ div.right-top button {
 
 /* Main Article Styles */
 
-.infograph {
+article.article-main {
+  width: 100%;
+}
+
+.clear-both {
+  clear: both;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+article footer {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.inflation {
   width: 945px;
   height: 576px;
+  margin: 0 auto;
+}
+
+.infograph {
+  width: 100%;
   background-image: url("./assets/main-article_1.png");
   background-size: cover;
 }
@@ -131,12 +154,13 @@ div.infograph div.second-line div.infograph-div {
 }
 
 .infograph-div {
-  width: 25%;  
+  width: 25%;
   margin-top: 150px;
   padding: 10px;
 }
 
-.infograph-div p {
+div.infograph-div > p {
+  width: 100%;
   margin: 0;
   font-size: .8rem;
 }
@@ -281,6 +305,14 @@ div.footer-content .nav-icon-links {
 
 /* MAIN CONTENT */
 
+article footer div.container {
+  margin-top: 30px;
+}
+
+article footer div.container button.btn-auth {
+  margin-top: 15px;
+}
+
 .main-fig {
   margin: 0 auto;
   text-align: center;
@@ -313,9 +345,10 @@ figcaption {
 }
 
 .main-article {
-  width: 1200px;
+  width: 85%;
   margin: 0 auto;
   font-family: georgia,'times new roman',times,serif;
+  margin-bottom: 90px;
 }
 
 .article-main .social-media ul {
@@ -382,7 +415,7 @@ figcaption {
   max-height: 15px;
 }
 
-.article-main p {
+.article-main > p, .article-main > h2, .article-main > figure {
   width: 600px;
   margin: 0 auto;
   margin-bottom: 16px;
@@ -402,8 +435,9 @@ figcaption {
 
 
 /* ASIDE */
-.aside-right, .related-article {
-  max-width: 250px;
+.aside-right {
+  padding-top: 300px;
+  width: 15%;
 }
 
 .related {
