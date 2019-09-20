@@ -478,3 +478,14 @@ figcaption {
   font-size: 1rem;
   padding: 0 10px;
 }
+
+/* animations & interactions */
+button.btn-auth:hover {
+  background-color: var(--galaxy-blue);
+  transition: 0.5s;
+}
+
+.related a:hover, h4:hover {
+  color: var(--unholy-grey);
+  transition: 0.5s;
+}
