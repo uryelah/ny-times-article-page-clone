@@ -179,3 +179,15 @@ div.footer-content .nav-icon-links {
   text-decoration: none;
   color: var(--black-hole);
 }
+
+.nav-aside {
+  border-left: 2px solid var(--stormy-grey);
+}
+
+.content-sub .nav-links {
+  font-size: 0.7rem;
+}
+
+.sub-start {
+  border-bottom: 2px solid var(--stormy-grey);
+}
