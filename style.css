@@ -7,6 +7,7 @@
   --pretty-white: #fff;
   --shady-grey: #e8e8e8;
   --black-hole: #000;
+  --stormy-grey: #e7e7e7;
 }
 
 *, *::before, *::after {
@@ -101,6 +102,80 @@ div.right-top button {
   background-size: cover;
 }
 
+div.infograph div.second-line div.infograph-div {
+  margin-top: 130px;
+}
+
 .infograph-div {
-  
+  width: 25%;  
+  margin-top: 150px;
+  padding: 10px;
+}
+
+.infograph-div p {
+  margin: 0;
+  font-size: .8rem;
+}
+
+.infograph-div p span {
+  font-weight: 600;
+  font-size: 0.65rem;
+  margin-right: 5px;
+}
+
+/* FOOTER */
+
+footer.footer-main {
+  padding: 20px 5px;
+  border-top: 3.5px double var(--stormy-grey);
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer.footer-main header .footer-logo {
+  width: 200px;
+}
+
+footer.footer-main header .float-right a {
+  color: var(--nebula-blue);
+  text-decoration: none;
+  font-size: 10px;
+}
+
+div.footer-content {
+  margin-top: 20px;
+  font-size: 0.87rem;
+}
+
+div.footer-content nav {
+  width: 16.666%;
+}
+
+div.footer-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.footer-content ul li {
+  margin-bottom: 8px;
+}
+
+div.footer-content nav h5.nav-links {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+footer.footer-main .nav-links {
+  margin: 0;
+  text-decoration: none;
+  color: var(--black-hole);
+  font-weight: 400; 
+}
+
+div.footer-content .nav-icon-links {
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black-hole);
 }
