@@ -18,7 +18,8 @@
 }
 
 *, *::before, *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -39,6 +40,10 @@ a {
 ul {
   list-style: none;
   padding: 0;
+}
+
+button {
+  cursor: pointer;
 }
 
 details > summary {
@@ -77,7 +82,8 @@ header.header-main {
 nav.nav-top {
   height: 40px;
   border: 1px solid var(--shady-grey);
-  box-shadow: 0 0 10px 0 var(--shady-grey);
+  -webkit-box-shadow: 0 0 10px 0 var(--shady-grey);
+          box-shadow: 0 0 10px 0 var(--shady-grey);
 }
 
 .nav-top a {
@@ -102,7 +108,7 @@ div.logo-center {
 }
 
 div.logo-center img {
-  width: 60%;
+  width: 195px;
   margin-top: -5px;
 }
 
@@ -124,9 +130,32 @@ div.right-top button {
 
 /* Main Article Styles */
 
-.infograph {
+article.article-main {
+  width: 100%;
+}
+
+.clear-both {
+  clear: both;
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+}
+
+article footer {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.inflation {
   width: 945px;
   height: 576px;
+  margin: 50px auto 120px auto;
+}
+
+.infograph {
+  width: 100%;
   background-image: url("./assets/main-article_1.png");
   background-size: cover;
 }
@@ -136,12 +165,13 @@ div.infograph div.second-line div.infograph-div {
 }
 
 .infograph-div {
-  width: 25%;  
+  width: 25%;
   margin-top: 150px;
   padding: 10px;
 }
 
-.infograph-div p {
+div.infograph-div > p {
+  width: 100%;
   margin: 0;
   font-size: .8rem;
 }
@@ -220,6 +250,8 @@ div.footer-content .nav-icon-links {
   padding: 15px;
   padding-bottom: 0;
   margin-bottom: 10px;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
   width: max-content !important;
 }
 
@@ -289,6 +321,14 @@ div.footer-content .nav-icon-links {
 
 /* MAIN CONTENT */
 
+article footer div.container {
+  margin-top: 30px;
+}
+
+article footer div.container button.btn-auth {
+  margin-top: 15px;
+}
+
 .main-fig {
   margin: 0 auto;
   text-align: center;
@@ -308,22 +348,24 @@ figcaption {
   margin-bottom: 50px;
 }
 
-.main-fig figcaption p {
+.main-fig figcaption p, .article-fig figcaption {
   font-size: 0.9375rem;
   color: var(--holly-gray);
   margin: 10px 0;
-  width: 720px;
+  width: inherit;
 }
 
-.main-fig figcaption p span {
+.main-fig figcaption p span, .article-fig figcaption span, .figcaption {
   font-size: 0.7075rem;
   color: var(--unholy-grey);
+  display: block;
 }
 
 .main-article {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   font-family: georgia,'times new roman',times,serif;
+  margin-bottom: 90px;
 }
 
 .article-main .social-media ul {
@@ -366,7 +408,9 @@ figcaption {
   left: 50%;
   display: block;
   font-size: .6rem;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .big-social-icon {
@@ -392,7 +436,7 @@ figcaption {
   max-height: 15px;
 }
 
-.article-main p {
+.article-main > p, .article-main > h2, .article-main > figure {
   width: 600px;
   margin: 0 auto;
   margin-bottom: 16px;
@@ -413,22 +457,38 @@ figcaption {
 
 /* ASIDE */
 .aside-right {
-  max-width: 250px;
+  min-width: 200px;
+  top: 900px;
+  margin-left: 100px;
 }
 
 .related {
   width: 100%;
   margin: 0 auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   overflow: auto;
   padding: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .related-article {
-  width: 240px;
+  width: 30%;
   height: 300px;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.aside-right .related-article {
+  width: 200px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px;
 }
 
 .related-article figure {
@@ -457,16 +517,15 @@ figcaption {
   width: 70%;
   margin: -20px;
   padding-right: 0;
-  border-top: 2px solid var(--pseudo-black);
 }
 
 .popular {
   width: 310px;
   top: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 20px;
   margin-top: -20px;
-  border-top: 2px solid var(--pseudo-black);
 }
 
 .popular li {
@@ -482,10 +541,36 @@ figcaption {
 /* animations & interactions */
 button.btn-auth:hover {
   background-color: var(--galaxy-blue);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 .related a:hover, h4:hover {
   color: var(--unholy-grey);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+}
+
+.footer-main a:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;  
+}
+
+.article-p {
+  width: 600px;
+  margin-left: calc(50% - 300px);
+}
+
+.session-with-aside {
+  width: 100%;
+  overflow: auto;
+}
+
+.border-top {
+  border-top: 2px solid var(--pseudo-black);
+  padding-top: 15px;
 }
