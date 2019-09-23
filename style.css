@@ -554,6 +554,19 @@ figcaption {
   margin: 1rem 0;
 }
 
+section.related-left h3 a.realted-left-link {
+  color: black;
+  text-decoration: none;
+}
+
+section.related-left h3 a.realted-left-link {
+  text-decoration: underline;
+}
+
+section h3 {
+  font-size: .9rem;
+}
+
 .popular {
   width: 28%;
   top: 0;
@@ -570,7 +583,7 @@ figcaption {
 }
 
 .popular h3 {
-  font-size: 1rem;
+  font-size: .9rem;
   padding: 0 10px;
 }
 
