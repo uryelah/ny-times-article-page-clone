@@ -188,16 +188,16 @@ footer.footer-main {
   margin: 0 auto;
 }
 
-.footer-main header {
+.footer-main .footer-top {
   border-top: 4.5px double var(--stormy-grey);
   padding: 20px 5px;
 }
 
-footer.footer-main header .footer-logo {
+footer.footer-main .footer-top .footer-logo {
   width: 200px;
 }
 
-footer.footer-main header .float-right a {
+footer.footer-main .footer-top .float-right a {
   color: var(--nebula-blue);
   font-size: 10px;
 }
