@@ -1,6 +1,6 @@
 # NY Times page clone
 
-This project objective is to practice HTML5 positioning with floats plus reinfrocing semantic HTML best practices and layout with CSS styling, by attempting to clone a [New York Times article page](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0).
+This project objective is to practice HTML5 positioning with floats plus reinforcing semantic HTML best practices and layout with CSS styling, by attempting to clone a [New York Times article page](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0).
 
 ## Getting Started
 
@@ -14,4 +14,4 @@ This project was built with simple HTML markup and CSS, using floats for most of
 
 * @uryelah
 * @santiago-rodrig
- 
+
