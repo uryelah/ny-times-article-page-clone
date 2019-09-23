@@ -1,0 +1,12 @@
+---
+linters:
+  stylelint:
+    config: 'stylelint.config.js'
+
+files:
+  ignore:
+    - 'normalize.css'
+
+branches:
+  ignore:
+    - 'master'
