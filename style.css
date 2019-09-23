@@ -74,7 +74,6 @@ header.header-main {
   top: 0;
   left: 0;
   width: 100%;
-  background: pink;
 }
 
 /* Nav styles */
@@ -321,6 +320,19 @@ div.footer-content .nav-icon-links {
 
 /* MAIN CONTENT */
 
+.article-link {
+  text-decoration: underline;
+  color: var(--nebula-blue);
+}
+
+.article-link:hover {
+  text-decoration: none;
+}
+
+.article-main > figure.article-fig {
+  margin: 50px auto;
+}
+
 article footer div.container {
   margin-top: 30px;
 }
@@ -494,7 +506,7 @@ figcaption {
 }
 
 .related-article {
-  width: 30%;
+  width: 33.333%;
   height: 300px;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -538,12 +550,17 @@ figcaption {
   padding-right: 0;
 }
 
+.related-left h3 {
+  margin: 1rem 0;
+}
+
 .popular {
-  width: 310px;
+  width: 28%;
   top: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 20px;
+  margin-left: 0;
   margin-top: -20px;
 }
 
